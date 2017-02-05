@@ -1,0 +1,21 @@
+<div class="footer">
+  <div class="top-title"> 
+    <p class="">{{title}}</p>
+  </div>
+  <ul class="social-container">
+    {{#each socialItems}}
+      <li class="">
+        <a target="{{props}}" href="{{route}}">
+          <img src="{{image}}">
+        </a>
+      </li>
+    {{/each}}
+  </ul>
+  <div class="quick-data">
+    <span>{{quickly.address}}</span>
+    <span>{{quickly.email}}</span>
+  </div>
+  <div class="terms-container">
+    <p>{{terms}}<a href="{{development.companyLink}}">{{development.companyDesc}}</a></p>
+  </div>
+</div>

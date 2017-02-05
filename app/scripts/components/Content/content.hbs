@@ -1,0 +1,37 @@
+<div class="content">
+  <div class="content-section first">
+    <p class="section">{{first.content}}</p>
+  </div>
+  <div class="content-section second">
+    <ul class="philosofy-container">
+      <li class="section left-container part-container">
+        {{#each second.contentLeft}}
+          <div class="efective-container {{color}}">
+            <img src="{{image}}"></img>
+            <h2>{{title}}</h2>
+          </div>
+        {{/each}}
+      </li>
+      <li class="section right-container part-container">
+        {{#each second.contentRight}}
+          <div class="efective-container {{color}}">
+            <img src="{{image}}"></img>
+            <h2>{{title}}</h2>
+          </div>
+        {{/each}}
+      </li>
+    </ul>
+  </div>
+  <div class="content-section section third">
+    <h1>{{third.title}}</h1>
+    <h3>{{third.subtitle}}</h3>
+    <ul class="">
+      {{#each third.items}}
+        <li class="techno-item">
+          <p>{{name}}</p>
+          <img src="{{image}}">
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,135 @@
+.content {
+  
+  padding-top: $navbarHeight;
+
+  .content-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-size: 18px;
+  }
+  .section{
+    opacity:0;
+
+  }
+  .first {
+    font-family: $raleway;
+    color: #ffffff;
+    font-size: 30px;
+    background-image: url("../assets/images/content/background_0.png");
+  }
+  
+  .second {
+    text-align: center;
+    color: white;
+
+    .philosofy-container {
+      padding-left: $appBorder;
+      padding-right: $appBorder;
+      list-style: none;
+      margin: 0 auto;
+      .part-container {
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 400px;
+        .efective-container {
+          margin: 50px;
+          p {
+            font-size: 25px;
+          }
+        }
+      }
+      img {
+        width: 250px;
+        height: 250px;
+
+      }
+    }
+
+  }
+  .third {
+    background-color: $secondaryColor;
+    text-align: center;
+    color: white;
+    font-family: $raleway;
+    h1 {
+    }
+    h2 {
+
+    }
+    ul {
+      padding-left: $appBorder;
+      padding-right: $appBorder;
+      list-style: none;
+      max-width: 800px;
+      margin: 0 auto;
+
+      .techno-item {
+        margin: 20px;
+        display: inline-block;
+        width: 200px;
+        opacity: 0;
+        img {
+          width: 120px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+
+  }
+
+  .first {
+    text-align: center;
+    p {
+      max-width: 500px;
+      margin: 0 auto;
+ 
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .content {
+    .first {
+      font-size: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    .second {
+      .philosofy-container {
+        .part-container{
+          padding-left: 0px;
+          padding-right: 0px;
+          max-width: 100%;
+          .efective-container{
+            p {
+              font-size: 15px;
+            }
+          }
+        }
+        img {
+          width: 150px;
+          height: 150px;
+        }
+      }
+    }
+    .third {
+      ul {
+        .techno-item {
+          width: 60px;
+          p{
+            display:none;
+          }
+          img {
+            width: 60px;
+          }
+        }
+      }
+    }
+  }
+}

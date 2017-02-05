@@ -1,0 +1,19 @@
+#preloader {
+  height: $appHeight;
+  width: 100%;
+  position: absolute;
+  background-color: $primeColor;
+  .preloader-main{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    img {
+      width: 300px;
+    }
+  }
+
+  @media (max-width: 600px) {
+
+  }
+}
